@@ -8,11 +8,7 @@
 * {
   margin: 0;
 }
-html, body {
-  height: 100%;
-}
 body {
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 img, picture, video, canvas, svg {
@@ -28,20 +24,23 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Custom properties */
 :root {
-    --primary-clr-one: hsl(243, 87%, 12%);
-    --primary-clr-two: hsl(238, 22%, 44%);
+    --primary-header-clr: hsl(243, 87%, 12%);
+    --primary-footer-clr: hsl(238, 22%, 44%);
 
-    --accent-clr-one: hsl(224, 93%, 58%);
-    --accent-clr-two: hsl(170, 45%, 43%);
+    --get-started-btn: hsl(224, 93%, 58%);
+    --redirect-clr: hsl(170, 45%, 43%);
 
-    --neutral-clr-one: hsl(240, 75%, 98%);
-    --neutral-clr-two: hsl(0, 0%, 75%);
+    --neutral-bg-clr: hsl(240, 75%, 98%);
+    --neutral-par-clr: hsl(0, 0%, 75%);
 
-    --ff-main : 'Open Sans', sans-serif;
-    --ff-second: 'Raleway', sans-serif;
+    --ff-body : 'Open Sans', sans-serif;
+    /* Font family for Heading, Buttons and Nav Headers*/
+    --ff-two: 'Raleway', sans-serif;
 
     --fw-raleway-regular: 400;
     --fw-raleway-bold: 700;
 
     --fw-sansSerif-regular: 400;
 }
+
+/* General styling */
