@@ -44,3 +44,43 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* General styling */
+
+/* Input styling */
+.error-message,
+.success-message {
+  display: none;
+}
+
+input, button, label {
+  display: block;
+ }
+
+ input:focus {
+  border: 2px solid black;
+}
+input:not(:placeholder-shown):not(:focus):valid {
+  border: 2px solid green;
+}
+input:not(:placeholder-shown):not(:focus):invalid {
+  border: 2px solid red;
+}
+input:not(:placeholder-shown):not(:focus):invalid + .error-message,
+input:not(:placeholder-shown):not(:focus):valid + .error-message + .success-message {
+  display: block;
+}
+
+input:in-range {
+  border: 2px solid green;
+}
+input:out-of-range {
+  border: 2px solid red;
+}
+
+[type="submit"] {
+  width: 150px;
+  height: 30px;
+  margin-top: 20px;
+  border: none;
+  background-color: var(--blue);
+  cursor: pointer;
+}

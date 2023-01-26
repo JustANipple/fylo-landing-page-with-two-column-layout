@@ -19,6 +19,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Font awesome icons -->
+  <script src="https://kit.fontawesome.com/05ab744fcb.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -68,9 +71,16 @@
     If you have any questions, our support team would be happy to help you.
   </p>
 
-  <label for="early-access-email">Enter your email...</label>
-  <input type="email" name="main-email" id="early-access-email">
-  <a href="#" class="early-access-button">Get Started For Free</a>
+  <!-- Email input -->
+
+  <form>
+    <label for="email"></label>
+    <input id="email" placeholder="Enter your email..." name="email" type="email" required>
+    <span class="error-message">Enter a valid email (sample@gmail.com)</span>
+    <span class="success-message">Email correct</span>
+    <input type="submit">
+  </form>
+
   
   <img src="images/logo.svg" alt="" class="footer-logo">
   <ul>
@@ -90,6 +100,10 @@
     <li>Terms</li>
     <li>Privacy</li>
   </ul>  
+
+  <i class="fa-brands fa-facebook-f"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-brands fa-instagram"></i>
 
 </body>
 </html>
