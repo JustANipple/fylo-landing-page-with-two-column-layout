@@ -35,4 +35,13 @@ p, h1, h2, h3, h4, h5, h6 {
     --accent-clr-two: hsl(170, 45%, 43%);
 
     --neutral-clr-one: hsl(240, 75%, 98%);
+    --neutral-clr-two: hsl(0, 0%, 75%);
+
+    --ff-main : 'Open Sans', sans-serif;
+    --ff-second: 'Raleway', sans-serif;
+
+    --fw-raleway-regular: 400;
+    --fw-raleway-bold: 700;
+
+    --fw-sansSerif-regular: 400;
 }
