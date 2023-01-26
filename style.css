@@ -1,0 +1,38 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Custom properties */
+:root {
+    --primary-clr-one: hsl(243, 87%, 12%);
+    --primary-clr-two: hsl(238, 22%, 44%);
+
+    --accent-clr-one: hsl(224, 93%, 58%);
+    --accent-clr-two: hsl(170, 45%, 43%);
+
+    --neutral-clr-one: hsl(240, 75%, 98%);
+}
