@@ -46,6 +46,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* General styling */
 
 /* Input styling */
+/* Guide for email input: https://betterprogramming.pub/advanced-form-validation-with-only-html-and-css-e92fa3dc9b54 */
 .error-message,
 .success-message {
   display: none;
