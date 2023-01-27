@@ -33,14 +33,86 @@ p, h1, h2, h3, h4, h5, h6 {
     --neutral-bg-clr: hsl(240, 75%, 98%);
     --neutral-par-clr: hsl(0, 0%, 75%);
 
-    --ff-body : 'Open Sans', sans-serif;
-    /* Font family for Heading, Buttons and Nav Headers*/
-    --ff-two: 'Raleway', sans-serif;
+    --ff-openSans : 'Open Sans', sans-serif;
+    --ff-raleway: 'Raleway', sans-serif;
 
+    --fw-openSans-regular: 400;
+    --fw-openSans-bold: 700;
     --fw-raleway-regular: 400;
-    --fw-raleway-bold: 700;
-
-    --fw-sansSerif-regular: 400;
+    --rw-ralweat-bold: 700;
 }
 
-/* General styling */
+/* Styling */
+body {
+  font-family: var(--ff-openSans);
+  background-color: var(--neutral-bg-clr);
+}
+
+/* ---------------Navigation bar--------------- */
+.nav-bar {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  max-width: 5rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5rem;
+  font-size: 0.75rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--primary-header-clr);
+}
+
+/* ---------------Main header--------------- */
+.section-header {
+  padding: 5rem 1.5rem;
+  text-align: center;
+  display: grid;
+  gap: 2.5rem;
+}
+
+.illustration-one {
+  padding: 0 1rem;
+}
+
+.header-content {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header-title {
+  font-family: var(--ff-openSans);
+  line-height: 1.5;
+  color: var(--primary-header-clr);
+}
+
+.header-description {
+  padding: 0 1rem;
+  font-size: 0.85rem;
+  color: var(--primary-header-clr);
+}
+
+@media screen and (min-width: 768px) {
+
+  /* ---------------Navigation bar--------------- */
+  .nav-bar {
+    padding: 4rem 5rem;
+  }
+
+  .nav-logo {
+    max-width: 10rem;
+  }
+
+  .nav-list {
+    gap: 3.5rem;
+    font-size: 1rem;
+  }
+}
