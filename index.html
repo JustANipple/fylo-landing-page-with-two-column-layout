@@ -25,85 +25,167 @@
 </head>
 <body>
 
-  <img src="images/logo.svg" alt="" aria-hidden="true" class="main-logo">
-  <ul class="nav-list">
-    <li>Features</li>
-    <li>Team</li>
-    <li>Sign In</li>
-  </ul>
-  
-  <img src="images/illustration-1.svg" alt="" aria-hidden="true" class="illustration-one">
-  <h1 class="header-title">All your files in one secure location, accessible anywhere.</h1>
-  <p class="header-description">
-    Fylo stores your most important files in one secure location. 
-    Access them wherever you need, share and collaborate with friends, 
-    family, and co-workers.
-  </p>
-  <label for="main-email">Enter your email...</label>
-  <input type="email" name="main-email" id="main-email">
-  <a href="#" class="main-button">Get Started</a>
+  <!-- ---------------Navigation bar--------------- -->
+  <nav class="nav-bar">
+    <div class="nav-logo">
+      <img src="images/logo.svg" alt="" aria-hidden="true">
+    </div>
+    <ul class="nav-list">
+      <li>Features</li>
+      <li>Team</li>
+      <li>Sign In</li>
+    </ul>
+  </nav>
 
-  <img src="images/illustration-2.svg" alt="" aria-hidden="true" class="illustration-two">
-  <h2 class="section-title">Stay productive, wherever you are</h2>
-  <p class="section-description-one">
-    Never let location be an issue when accessing your files. Fylo has you 
-    covered for all of your file storage needs.
-  </p>
-  <p class="section-description-two">
-    Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
-  </p>
-  <a href="#" class="redirect">See how Fylo works</a>
-  <img src="images/icon-arrow.svg" alt="" aria-hidden="true">
-  <img src="images/icon-quotes.svg" alt="" aria-hidden="true">
-  <p class="review">
-    Fylo has improved our team productivity by an order of magnitude. Since 
-    making the switch our team has become a well-oiled collaboration machine.
-  </p>
-  <img src="images/avatar-testimonial.jpg" alt="" aria-hidden="true" class="avatar-image">
-  <h3 class="avatar-name">Kyle Burton</h3>
-  <p class="avatar-role">Founder & CEO, Huddle</p>
+  <!-- ---------------Main--------------- -->
+  <main>
+    <!-- ---------------Main header--------------- -->
+    <section class="section-header">
+      <div class="illustration-one">
+        <img src="images/illustration-1.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="header-content">
+        <h1 class="header-title">
+          All your files in one secure location, accessible anywhere.
+        </h1>
+        <p class="header-description">
+          Fylo stores your most important files in one secure location. 
+          Access them wherever you need, share and collaborate with friends, 
+          family, and co-workers.
+        </p>
+        <form action="#" class="header-email-form">
+          <label for="typeEmail">Email:</label>
+          <input type="email" id="typeEmail" placeholder="Enter your email...">
+          <p class="error-message">
+            Please check your email
+          </p>
+          <button type="submit" class="send-email">
+            Get started
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- ---------------Section--------------- -->
+    <section class="productive">
+      <div class="illustration-two">
+        <img src="images/illustration-2.svg" alt="" aria-hidden="true">
+      </div>
+      <div class="productive-content">
+        <h2 class="productive-title">
+          Stay productive, wherever you are
+        </h2>
+        <p class="productive-description-one">
+          Never let location be an issue when accessing your files. Fylo has you 
+          covered for all of your file storage needs.
+        </p>
+        <p class="productive-description-two">
+          Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
+        </p>
+        <div class="redirection-block">
+          <a href="#" class="redirect">See how Fylo works</a>
+          <div class="arrow-icon">
+            <img src="images/icon-arrow.svg" alt="" aria-hidden="true">
+          </div>
+        </div>
+        <div class="review-box">
+          <div class="quotes">
+            <img src="images/icon-quotes.svg" alt="" aria-hidden="true">
+          </div>
+          <p class="review">
+            Fylo has improved our team productivity by an order of magnitude. Since 
+            making the switch our team has become a well-oiled collaboration machine.
+          </p>
+          <div class="avatar">
+            <div class="avatar-img">
+              <img src="images/avatar-testimonial.jpg" alt="" aria-hidden="true">
+            </div>
+            <div class="avatar-info">
+              <h3 class="avatar-name">Kyle Burton</h3>
+              <p class="avatar-role">
+                Founder & CEO, Huddle
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <h2 class="early-access-title">
-    Get early access today
-  </h2>
-  <p class="early-access-description">
-    It only takes a minute to sign up and our free starter tier is extremely generous. 
-    If you have any questions, our support team would be happy to help you.
-  </p>
+    </section>
 
-  <!-- Email input -->
+  </main>
 
-  <form>
-    <label for="email"></label>
-    <input id="email" placeholder="Enter your email..." name="email" type="email" required>
-    <span class="error-message">Enter a valid email (sample@gmail.com)</span>
-    <span class="success-message">Email correct</span>
-    <input type="submit">
-  </form>
+  <!-- ---------------Early access--------------- -->
+  <section class="early-access">
+    <div class="early-acces-header">
+      <h2 class="early-access-title">
+        Get early access today
+      </h2>
+      <p class="early-access-description">
+        It only takes a minute to sign up and our free starter tier is extremely generous. 
+        If you have any questions, our support team would be happy to help you.
+      </p>
+    </div>
+    <form action="#" class="section-email-form">
+      <label for="typeEmail">Email:</label>
+      <input type="email" id="typeEmail" placeholder="Enter your email...">
+      <p class="error-message">
+        Please check your email
+      </p>
+      <button type="submit" class="send-email">
+        Get started
+      </button>
+    </form>
+  </section>
 
-  
-  <img src="images/logo.svg" alt="" class="footer-logo">
-  <ul>
-    <li>Phone: +1-543-123-4567</li>
-    <li>example@fylo.com</li>
-  </ul>
-
-  <ul>
-    <li>About Us</li>
-    <li>Jobs</li>
-    <li>Press</li>
-    <li>Blog</li>
-  </ul>
-
-  <ul>
-    <li>Contact Us</li>
-    <li>Terms</li>
-    <li>Privacy</li>
-  </ul>  
-
-  <i class="fa-brands fa-facebook-f"></i>
-  <i class="fa-brands fa-twitter"></i>
-  <i class="fa-brands fa-instagram"></i>
+  <!-- ---------------Footer--------------- -->
+  <footer>
+    <div class="footer-header">
+      <div class="footer-logo">
+        <img src="images/logo.svg" alt="" aria-hidden="true">
+      </div>
+      <ul class="info">
+        <li>Phone: +1-543-123-4567</li>
+        <li>example@fylo.com</li>
+      </ul>
+    </div>
+    <div class="external-links">
+      <ul class="link-group-one">
+        <li>
+            <a href="#">About Us</a>
+        </li>
+        <li>
+            <a href="#">Jobs</a>
+        </li>
+        <li>
+            <a href="#">Press</a>
+        </li>
+        <li>
+            <a href="#">Blog</a>
+        </li>
+      </ul>
+      <ul class="link-group-two">
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
+        <li>
+            <a href="#">Terms</a>
+        </li>
+        <li>
+            <a href="#">Privacy</a>
+        </li>
+      </ul>  
+    </div>
+    <div class="social">
+      <div class="facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </div>
+      <div class="twitter">
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
