@@ -248,6 +248,9 @@ body {
   font-weight: var(--fw-openSans-bold);
 }
 
+
+
+/* Desktop styling */
 @media screen and (min-width: 768px) {
 
   /* ---------------Navigation bar--------------- */
