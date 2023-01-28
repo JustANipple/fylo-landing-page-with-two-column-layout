@@ -316,7 +316,9 @@ body {
   .productive {
     grid-template-areas: 
     "productive illustration-two";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.25fr 1fr;
+    padding: 0 5em 7em 5em;
+    gap: 1em;
   }
 
   .illustration-two {
@@ -326,5 +328,52 @@ body {
   .productive-content {
     grid-area: productive;
     margin: auto 0;
+    place-items: unset;
+  }
+
+  .productive-header {
+    gap: 2em;
+  }
+
+  .productive-title {
+    text-align: left;
+    font-size: 2.4em;
+  }
+
+  .productive-descriptions {
+    font-size: 1em;
+    padding-right: 10em;
+    color: var(--primary-header-clr);
+  }
+
+  .redirect {
+    font-size: 1em;
+  }
+
+  .review-box {
+    margin: 0;
+    max-width: 22em;
+    padding: 1.5em 2em;
+  }
+
+  .quotes img {
+    height: 1em;
+  }
+
+  .review {
+    font-size: 0.9em;
+    line-height: 1.7;
+  }
+
+  .avatar-img {
+    max-width: 2em;
+  }
+
+  .avatar-name {
+    font-size: 0.75em;
+  }
+
+  .avatar-role {
+    font-size: 0.5em;
   }
 }
