@@ -73,10 +73,14 @@ body {
 
 /* ---------------Main header--------------- */
 .section-header {
-  padding: 5rem 1.5rem;
+  padding: 5rem 1.5rem 8rem 1.5rem;
   text-align: center;
   display: grid;
   gap: 2.5rem;
+  background-image: url(images/bg-curve-mobile.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .illustration-one {
@@ -149,9 +153,100 @@ body {
   border-radius: 0.25rem;
   font-weight: var(--fw-openSans-bold);
   font-size: 0.85rem;
+  box-shadow: 0px 5px 15px -10px black;
 }
 
+/* ---------------Section--------------- */
+.productive {
+  background-color: var(--neutral-bg-clr);
+  padding: 5rem 1.5rem 5rem 1.5rem;
+  display: grid;
+  gap: 5rem;
+}
 
+.illustration-two {
+  padding: 0 0.5rem;
+}
+
+.productive-content {
+  display: grid;
+  gap: 2rem;
+  place-items: center;
+}
+
+.productive-header {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.productive-title {
+  color: var(--primary-header-clr);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.productive-descriptions {
+  display: grid;
+  gap: 1rem;
+  color: var(--primary-footer-clr);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.redirection-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border-bottom: 1px solid var(--redirect-clr);
+}
+
+.redirect {
+  text-decoration: none;
+  color: var(--redirect-clr);
+  padding: 0.25rem;
+  font-size: 0.75rem;
+}
+
+/* Review box */
+
+.review-box {
+  background-color: white;
+  padding: 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+  margin: 0 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 7px -5px black;
+}
+
+.review {
+  color: var(--primary-header-clr);
+  font-size: 0.65rem;
+  line-height: 1.5;
+}
+
+.avatar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.avatar-img {
+  max-width: 1.5rem;
+}
+
+.avatar-img img {
+  border-radius: 50%;
+}
+
+.avatar-name {
+  font-size: 0.6rem;
+}
+
+.avatar-role {
+  font-size: 0.4rem;
+  font-weight: var(--fw-openSans-bold);
+}
 
 @media screen and (min-width: 768px) {
 
@@ -171,13 +266,13 @@ body {
 
   /* ---------------Main header--------------- */
   .section-header {
-    grid-template-areas: "form illustration";
+    grid-template-areas: "form illustration-one";
     grid-template-columns: 1fr 1fr;
-    padding: 0 5em;
+    padding: 0 5em 23em 5em;
   }
   
   .illustration-one {
-    grid-area: illustration;
+    grid-area: illustration-one;
   }
 
   .header-email-form {
@@ -215,5 +310,21 @@ body {
 
   .error-message {
     grid-row: 2;
+  }
+
+  /* ---------------Section--------------- */
+  .productive {
+    grid-template-areas: 
+    "productive illustration-two";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .illustration-two {
+    grid-area: illustration-two;
+  }
+
+  .productive-content {
+    grid-area: productive;
+    margin: auto 0;
   }
 }
