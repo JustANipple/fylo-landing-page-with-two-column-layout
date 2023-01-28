@@ -248,7 +248,57 @@ body {
   font-weight: var(--fw-openSans-bold);
 }
 
+  /* ---------------Early access--------------- */
+  .early-access {
+    background-color: var(--primary-footer-clr);
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    display: grid;
+    gap: 0.5rem;
+  }
 
+  .early-acces-header {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .early-access-title {
+    font-size: 1.1rem;
+  }
+
+  .early-access-description {
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+
+/* Email input manager */
+
+.section-email-form {
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.5rem;
+  max-width: 16.5rem;
+  margin: 0 auto;
+}
+
+.section-email-form #typeEmail {
+  padding: 0.5rem 0.5rem;
+}
+
+.section-email-form #typeEmail::placeholder {
+  font-size: 0.55rem;
+}
+
+.section-email-form .send-email {
+  font-size: 0.65rem;
+  padding: 0.5rem 4rem;
+}
+
+.section-email-form .error-message {
+  color: white;
+  font-size: 0.75rem;
+}
 
 /* Desktop styling */
 @media screen and (min-width: 768px) {
@@ -378,5 +428,50 @@ body {
 
   .avatar-role {
     font-size: 0.5em;
+  }
+
+/* ---------------Early access--------------- */
+  .early-access {
+    grid-template-areas: 
+    "content email";
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    gap: 13em;
+  }
+
+  .early-acces-header {
+    grid-area: content;
+    text-align: left;
+    padding: 4em 2em;
+  }
+
+  .early-access-title {
+    font-size: 2em;
+  }
+
+  .early-access-description {
+    font-size: 1em;
+  }
+
+  .section-email-form {
+    grid-area: email;
+    max-width: 32em;
+    margin: unset;
+    gap: 1em;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .section-email-form #typeEmail::placeholder {
+    font-size: 0.75em;
+  }
+
+  .section-email-form #typeEmail {
+    padding: 0.5em 1em;
+  }
+
+  .section-email-form .send-email {
+    width: max-content;
+    font-size: 0.9em;
+    padding: 0.25em 1.5em;
   }
 }
