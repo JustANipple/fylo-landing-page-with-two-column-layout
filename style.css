@@ -45,7 +45,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* Styling */
 body {
   font-family: var(--ff-openSans);
-  background-color: var(--neutral-bg-clr);
+  background-color: white;
 }
 
 /* ---------------Navigation bar--------------- */
@@ -100,6 +100,59 @@ body {
   color: var(--primary-header-clr);
 }
 
+/* Email input manager */
+
+.header-email-form {
+  padding: 0.75rem;
+  display: grid;
+  gap: 1rem;
+}
+
+#typeEmail {
+  padding: 1em 1.25rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid black;
+}
+
+#typeEmail::placeholder {
+  color: var(--neutral-par-clr);
+}
+
+#typeEmail:invalid:focus:not(:placeholder-shown) + .error-message {
+  display: block;
+}
+
+#typeEmail:invalid:focus:not(:placeholder-shown) {
+  border: 1px solid red;
+  outline-color: red;
+}
+
+#typeEmail:valid {
+  border: 1px solid green;
+  outline-color: green;
+}
+
+.error-message {
+  display: none;
+  color: red;
+  text-align: left;
+  font-size: 0.75rem;
+  margin: 0.25rem 0;
+}
+
+.send-email {
+  background-color: var(--get-started-btn);
+  border: none;
+  color: white;
+  padding: 0.7rem 0;
+  border-radius: 0.25rem;
+  font-weight: var(--fw-openSans-bold);
+  font-size: 0.85rem;
+}
+
+
+
 @media screen and (min-width: 768px) {
 
   /* ---------------Navigation bar--------------- */
@@ -114,5 +167,53 @@ body {
   .nav-list {
     gap: 3.5rem;
     font-size: 1rem;
+  }
+
+  /* ---------------Main header--------------- */
+  .section-header {
+    grid-template-areas: "form illustration";
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5em;
+  }
+  
+  .illustration-one {
+    grid-area: illustration;
+  }
+
+  .header-email-form {
+    grid-area: form;
+  }
+
+  .header-content {
+    grid-template-areas: 
+    "title title"
+    "description description"
+    "form form";
+    margin: auto 0;
+    text-align: left;
+  }
+
+  .header-title {
+    grid-area: title;
+    font-size: 2.5em;
+  }
+
+  .header-description {
+    grid-area: description;
+    padding: 0;
+    font-size: 1.15em;
+  }
+
+  .header-email-form {
+    grid-area: form;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 0.3fr;
+    padding: 0;
+    padding-right: 4em;
+    row-gap: 0;
+  }
+
+  .error-message {
+    grid-row: 2;
   }
 }
