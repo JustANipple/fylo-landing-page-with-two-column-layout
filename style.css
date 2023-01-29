@@ -48,7 +48,7 @@ body {
   background-color: white;
 }
 
-/* ---------------Navigation bar--------------- */
+/* ==========Navigation bar========== */
 .nav-bar {
   display: flex;
   padding: 1.5rem;
@@ -71,7 +71,7 @@ body {
   color: var(--primary-header-clr);
 }
 
-/* ---------------Main header--------------- */
+/* ==========Main header========== */
 .section-header {
   padding: 5rem 1.5rem 8rem 1.5rem;
   text-align: center;
@@ -159,7 +159,7 @@ body {
   box-shadow: 0px 5px 15px -10px black;
 }
 
-/* ---------------Section--------------- */
+/* ==========Section========== */
 .productive {
   background-color: var(--neutral-bg-clr);
   padding: 5rem 1.5rem 5rem 1.5rem;
@@ -251,7 +251,7 @@ body {
   font-weight: var(--fw-openSans-bold);
 }
 
-  /* ---------------Early access--------------- */
+  /* ==========Early access========== */
   .early-access {
     background-color: var(--primary-footer-clr);
     color: white;
@@ -302,7 +302,7 @@ body {
   font-size: 0.75rem;
 }
 
-/* ---------------Footer--------------- */
+/* ==========Footer========== */
 footer {
   display: grid;
   gap: 3rem;
@@ -405,7 +405,7 @@ footer {
 /* Desktop styling */
 @media screen and (min-width: 1024px) {
 
-  /* ---------------Navigation bar--------------- */
+  /* ==========Navigation bar========== */
   .nav-bar {
     padding: 4rem 5rem;
   }
@@ -419,7 +419,7 @@ footer {
     font-size: 1rem;
   }
 
-  /* ---------------Main header--------------- */
+  /* ==========Main header========== */
   .section-header {
     grid-template-areas: "form illustration-one";
     grid-template-columns: 1fr 1fr;
@@ -464,7 +464,7 @@ footer {
     grid-row: 2;
   }
 
-  /* ---------------Section--------------- */
+  /* ==========Section========== */
   .productive {
     grid-template-areas: 
     "productive illustration-two";
@@ -529,7 +529,7 @@ footer {
     font-size: 0.5em;
   }
 
-/* ---------------Early access--------------- */
+/* ==========Early access========== */
   .early-access {
     grid-template-areas: 
     "content email";
@@ -576,7 +576,7 @@ footer {
     grid-row: 3;
   }
 
-  /* ---------------Footer--------------- */
+  /* ==========Footer========== */
   footer {
     display: grid;
     grid-template-areas: 
