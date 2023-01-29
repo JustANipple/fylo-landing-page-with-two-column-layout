@@ -430,10 +430,6 @@ footer {
     grid-area: illustration-one;
   }
 
-  .header-email-form {
-    grid-area: form;
-  }
-
   .header-content {
     grid-template-areas: 
     "title title"
@@ -461,6 +457,7 @@ footer {
     padding: 0;
     padding-right: 4em;
     row-gap: 0;
+    column-gap: 1em;
   }
 
   .error-message {
