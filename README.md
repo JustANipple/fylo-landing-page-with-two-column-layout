@@ -51,10 +51,11 @@ Users should be able to:
 
 ### What I learned
 
-At the start, it looked like a website i've already done, but then i realized i had an email form to compile that had to show an error if the email was wrong. This has been a challenge because i expected having only static components without Javascript. I managed to change borders and showing the error message on invalid email typing with pseudo-classes. There's a little bit of animation too so it doesn't look too invasive.
-The first thing i thought was making the block disappear completely, but that removed it from the flow and made it recenter where reappeared. It wasn't nice to look, so i discovered i could change it's visibility instead, but making it present in the flow. Changing it's opacity makes possible to have a nice transition effect when the error message appears or disappears
-
-I learnt that you can give an input a pattern so if you type something different from it you get an error and can't send the form
+1. To make an email form that gives an error if you don't type an email, you need it to give it a pattern using regular expressions and give it the "required" rule so it doesn't send the form until you type a correct email
+2. To show and to unshow an error message for the email form, don't use "display block", but instead visibility and opacity, so the element doesn't get out of the flow and you can give it a transition to make it look better
+3. Use pseudo classes to make the email form change styling when on focus
+4. If you have something like the "see how fylo works" block that gets a color change on hover, given the fact you can't change a color of an image just with "color: something", increase its brightness to make it like it switched colors
+5. To make the fylo logo at the footer part white, just make it black filtering its brightness to 0 and then invert it so it gets white
 
 This is the interesting part of the email form
 
